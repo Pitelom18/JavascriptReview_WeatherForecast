@@ -68,7 +68,7 @@ function getForecast(city) {
 }
 
 function displayForecast(response) {
-  console.log(response);
+  console.log(response.data.daily);
   let forecastHtml = "";
 
   response.data.daily.forEach(function (day, index) {
